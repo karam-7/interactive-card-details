@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ====================Start Main Area ================= -->
+    <main class="site">
+      <div class="card">
+        <div class="front">
+          <img src="./images/card-logo.svg" alt="" class="logo" />
+          <h1 class="front-h1">0000 0000 0000 0000</h1>
+          <div class="name">
+            <p class="name-para">Jane Appleseed</p>
+            <p class="date-para">
+              <span class="month">00</span>/<span class="year">00</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="back">
+          <p class="cv-para">000</p>
+        </div>
+      </div>
+
+      <!-- ================== Start Info Area =================== -->
+
+      <div class="info">
+        <form action="#" class="info-form">
+          <h2 class="form-h2">Cardholder Name</h2>
+          <input
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+            class="form-input"
+            name="card-holder"
+            id="name"
+          />
+          <p class="error">Can't be blank</p>
+          <h2 class="form-h2">Card Number</h2>
+          <input
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+            class="form-input"
+            name="card-number"
+            id="number"
+          />
+          <p class="error">Can't be blank</p>
+          <p class="error1">Wrong formant, number only</p>
+          <div class="num">
+            <div class="date">
+              <h2 class="form-h2">Exp. Date (MM/YY)</h2>
+              <div class="year">
+                <input
+                  type="text"
+                  placeholder="MM"
+                  class="year-input form-input"
+                  name="month"
+                  id="month"
+                />
+                <input
+                  type="text"
+                  placeholder="YY"
+                  class="year-input form-input"
+                  name="year"
+                  id="year"
+                />
+              </div>
+              <p class="error">Can't be blank</p>
+            </div>
+            <div class="cv">
+              <h2 class="form-h2">CVC</h2>
+              <input
+                type="text"
+                placeholder="e.g. 123"
+                class="form-input cv-input"
+                name="cvc"
+                id="cvc"
+              />
+              <p class="error">Can't be blank</p>
+            </div>
+          </div>
+        </form>
+
+        <button type="submit" class="btn">Confirm</button>
+      </div>
+
+      <!-- ================== End Info Area =================== -->
+      <!-- ================== Start Thanks Area =================== -->
+
+      <div class="thank">
+        <img src="./images/icon-complete.svg" alt="icon" class="check" />
+        <h1 class="thank-h1">Thank you!</h1>
+        <p class="thank-para">We've added your card details</p>
+        <button type="submit" class="btn1">Continue</button>
+      </div>
+
+      <!-- ================== End Thanks Area =================== -->
+    </main>
+    <!-- ====================End Main Area ================= -->
+    <!-- ======================== START FOOTER AREA ==================== -->
+
+    <footer class="foot">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="http://karam-portfolio.liveblog365.com" target="_blank">
+        KARAM SINGH</a
+      >
+    </footer>
+
+    <!-- ======================== END FOOTER AREA ==================== -->
+    <script src="./index.js"></script>
+  </body>
+</html>
